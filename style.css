@@ -167,6 +167,47 @@ nav ul li .activ{
   color: #28a745;
 }
 
+#teams {
+  padding: 60px 20px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #e6007f; /* Corporate Color 1 */
+  margin-bottom: 40px;
+}
+
+.team-card {
+  border: none;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.team-card:hover {
+  transform: scale(1.03);
+}
+
+.team-card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.team-title {
+  text-align: center;
+  padding: 15px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  background-color: #ffda00; /* Corporate Color 4 */
+}
+
+
 
 @media (max-width: 991.98px) {
     .navbar-nav {
