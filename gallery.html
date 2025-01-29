@@ -87,7 +87,6 @@
     <div class="session-container">
       <h1 class="session-heading">2024-25 Session Images</h1>
       <div class="row g-2 session24-25-images">
-        <!-- Gallery Images for 2024-25 Session will be populated here -->
       </div>
     </div>
 
@@ -95,7 +94,6 @@
     <div class="session-container">
       <h1 class="session-heading">2023-24 Session Images</h1>
       <div class="row g-2 session23-24-images">
-        <!-- Gallery Images for 2023-24 Session will be populated here -->
       </div>
     </div>
   </section>
@@ -149,13 +147,12 @@
   <script src="script.js"></script>
   <script>
     Fancybox.bind("[data-fancybox]", {
-      Toolbar: false,  // Hide toolbar
+      Toolbar: false, 
       Thumbs: {
-        autoStart: true, // Start with thumbnails open
+        autoStart: true, 
       } 
     });
 
-    // Image links for 2023-24 session
     const imageLinks23_24 = [
   "https://i.postimg.cc/P5gc5ZQ2/1.jpg",
   "https://i.postimg.cc/BQwkRRLW/2.jpg",
@@ -203,7 +200,6 @@
 
 
             
-   // Image links for 2024-25 session
    const imageLinks24_25 = [
   "https://i.postimg.cc/G2WJkJ95/1.jpg",
   "https://i.postimg.cc/3R4F4brG/2.jpg",
@@ -238,7 +234,6 @@
 
 
 
-   // Function to create gallery images
    function createGalleryImages(container, imageLinks, session) {
       imageLinks.forEach((src, index) => {
         const colDiv = document.createElement("div");
@@ -259,7 +254,6 @@
       });
     }
 
-    // Initialize galleries for both sessions
     createGalleryImages(document.querySelector(".session24-25-images"), imageLinks24_25, "24-25");
     createGalleryImages(document.querySelector(".session23-24-images"), imageLinks23_24, "23-24");
   </script>
