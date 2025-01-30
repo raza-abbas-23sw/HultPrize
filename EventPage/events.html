@@ -337,9 +337,36 @@
     
     
     <script>
-        gsap.to(".odd", { x: -30, duration: 0.6, ease: "power2.in" });
-        gsap.to(".even", { x: 30, duration: 0.6, ease: "power2.in" });
+        // gsap.to(".odd", { x: -30, duration: 0.6, ease: "power2.in" });
+        // gsap.to(".even", { x: 30, duration: 0.6, ease: "power2.in" });
     
+//         const tl = gsap.timeline();
+// tl.to(".odd", { x: -30, duration: 1 })
+//   .to(".even", { x: 30, duration: 1 })
+  
+  gsap.registerPlugin(ScrollTrigger);
+gsap.to(".even", {
+  x: 500,
+  duration: 2,
+  scrollTrigger: {
+    trigger: ".box",
+    start: "top center",
+    end: "bottom center",
+    scrub: true,
+  },
+})
+.to(".odd", {
+    x: -500,
+    duration: 2,
+    scrollTrigger: {
+        trigger: ".box",
+        start: "top center",
+        end: "bottom center",
+        scrub: true,
+    },
+    }
+)
+
     </script>
   
 </body>
