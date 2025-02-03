@@ -4,14 +4,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teams</title>
+    <title>About Us</title>
+
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
 
-    <link rel="icon" href="media/ICON.ico"/>
+    <link rel="icon" href="../media/ICON.ico" />
     <link rel="stylesheet" href="style.css">
+    <style>
+        #teams {
+            margin-top: 105px;
+        }
+
+        #teams .heading {
+            font-size: 3rem;
+            font-weight: bold;
+            color: white;
+            text-shadow:
+                -2px -2px 0 #000,
+                2px -2px 0 #000,
+                -2px 2px 0 #000,
+                2px 2px 0 #000;
+         }
+        #teams .teams-row {
+            perspective: 800px;
+            margin-bottom: 60px;
+        }
+
+        #teams .teams-row>div {
+            transition: all .6s ease-in;
+        }
+
+        #teams .teams-row>div:hover {
+            transform: rotateY(0) translateX(0) !important;
+        }
+
+        #teams .teams-row>div:nth-child(1) {
+            transform: rotateY(25deg) translateX(-20px);
+        }
+
+        #teams .teams-row>div:nth-child(3) {
+            transform: rotateY(-25deg) translateX(20px);
+        }
+
+        @media (max-width: 768px) {
+            #teams .teams-row>div {
+                transform: none !important;
+                text-align: center;
+            }
+
+            #teams .teams-row {
+                perspective: 0;
+                margin-bottom: 0;
+            }
+        }
+    </style>
 
 </head>
 
@@ -42,105 +91,102 @@
                         <a class="nav-link" href="gallery.html">Gallery</a>
                     </li>
                     <!-- <li class="nav-item">
-                        <a class="nav-link" href="blog.html">Blog/News</a>
-                    </li> -->
+            <a class="nav-link" href="blog.html">Blog/News</a>
+          </li> -->
                     <li class="nav-item">
                         <a class="nav-link" href="contact.html">Contact</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link btn custom-button" href="RegisterPage/register.html" id="register">Register Now</a>
+                    <li class="nav-item ">
+                        <a class="nav-link custom-button  text-white" href="RegisterPage/register.html"
+                            id="register">Register Now</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Teams Section -->
     <section id="teams">
-        <div class="container">
-            <h2 class="section-title">Our Teams</h2>
-            <div class="row g-4">
-                <!-- Team 1 -->
-                <div class="col-md-4">
-                    <div class="card team-card">
-                        <img src="media/teams/exective.jpg" alt="Team 1">
-                        <div class="team-title">Team 1</div>
-                    </div>
+        <div class="container bg-succes" style=" width: 100%;">
+            <div class="row sm-screen mt-5">
+                <div
+                    class="col d-flex flex-column align-items-center">
+                    <h1 class="heading text-center">Meet Our Team</h1>
+                    <p class="text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam exercitationem et qui, distinctio iste facere cumque. In sed maxime aperiam vitae fuga totam saepe quam! Voluptate harum sapiente doloribus fuga!</p>
                 </div>
-                <!-- Team 2 -->
-                <div class="col-md-4">
-                    <div class="card team-card">
-                        <img src="media/teams/management.jpg" alt="Team 2">
-                        <div class="team-title">Team 2</div>
-                    </div>
-                </div>
-                <!-- Team 3 -->
-                <div class="col-md-4">
-                    <div class="card team-card">
-                        <img src="media/teams/graphic.jpg" alt="Team 3">
-                        <div class="team-title">Team 3</div>
-                    </div>
-                </div>
-                <!-- Team 4 -->
-                <div class="col-md-4">
-                    <div class="card team-card">
-                        <img src="media/teams/organizer.jpg" alt="Team 3">
-                        <div class="team-title">Team 3</div>
-                    </div>
-                </div>
-                <!-- Team 5 -->
-                <div class="col-md-4">
-                    <div class="card team-card">
-                        <img src="media/teams/web.jpeg" alt="Team 3">
-                        <div class="team-title">Team 3</div>
-                    </div>
-                </div>
-                <!-- Team 6 -->
-                <div class="col-md-4">
-                    <div class="card team-card">
-                        <img src="media/teams/Content.jpeg" alt="Team 3">
-                        <div class="team-title">Team 3</div>
-                    </div>
-                </div>
-                 <!-- Team 7 -->
-                <div class="col-md-4">
-                    <div class="card team-card">
-                        <img src="media/teams/marketing.jpeg" alt="Team 3">
-                        <div class="team-title">Team 3</div>
-                    </div>
-                </div> 
-                <!-- Team 8 -->
-                <div class="col-md-4">
-                    <div class="card team-card">
-                        <img src="media/teams/photography.jpeg" alt="Team 3">
-                        <div class="team-title">Team 3</div>
-                    </div>
-                </div> 
-                <!-- Team 9 -->
-                <div class="col-md-4">
-                    <div class="card team-card">
-                        <img src="media/teams/registration.jpeg" alt="Team 3">
-                        <div class="team-title">Team 3</div>
-                    </div>
-                </div> 
-                <!-- Team 10 -->
-                <div class="col-md-4">
-                    <div class="card team-card">
-                        <img src="media/teams/videography.jpeg" alt="Team 3">
-                        <div class="team-title">Team 3</div>
-                    </div>
-                </div> 
-                <!-- Team 11 -->
-                <div class="col-md-4">
-                    <div class="card team-card">
-                        <img src="media/teams/coordinators.jpeg" alt="Team 3">
-                        <div class="team-title">Team 3</div>
-                    </div>
-                </div>
-                
-                <!-- Repeat for all 11 teams -->
             </div>
-        </div>
+            <div class="row lead pt-5 gap-0">
+                <div class="col-lg-3 col-sm-6 pb-5 pb-lg-4 ">
+                    <img src="media/teams/REHAN MEHDI.png" alt="" style="width: 100%;">
+                </div>
+                <div
+                    class="col-lg-6 col-sm-6 pb-5 pb-lg-4 d-flex flex-column  align-items-center justify-content-center  remove">
+                    <h1 class="heading">Meet Our Team</h1>
+                    <p class="text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam exercitationem et qui, distinctio iste facere cumque. In sed maxime aperiam vitae fuga totam saepe quam! Voluptate harum sapiente doloribus fuga!</p>
+                </div>
+                <div class="col-lg-3 col-sm-6 pb-5 pb-lg-4">
+                    <img src="media/teams/ZAIN kKHAN.png" alt="" style="width: 100%;">
+                </div>
+
+                <div class="col-lg-3 col-sm-6 pb-5 pb-lg-0 ">
+                    <img src="media/teams/ALI NAWAZ.jpg.png" alt="" style="width: 100%;">
+                </div>
+                <div class="col-lg-3 col-sm-6 pb-5 pb-lg-0">
+                    <img src="media/teams/MUSKAN ALI RIZVI.png" alt="" style="width: 100%;">
+
+                </div>
+                <div class="col-lg-3 col-sm-6 pb-5 pb-lg-0">
+                    <img src="media/teams/FARAZ SIDIQUI.png" alt="" style="width: 100%;">
+
+                </div>
+                <div class="col-lg-3 col-sm-6 pb-5 pb-lg-0">
+                    <img src="media/teams/LEAD FINANCE SZAB.png" alt="" style="width: 100%;">
+                </div>
+
+            </div>
+            <div class="row mt-5 teams-row gap-5 gap-md-0">
+                <div class="col-md-4">
+                    <img src="media/teams/event management.jpg" alt="" class="w-100">
+                </div>
+                <div class="col-md-4">
+                    <img src="media/teams/EXECUTIVE BODY-2.png" alt="" class="w-100">
+                </div>
+                <div class="col-md-4">
+                    <img src="media/teams/organizer.jpg" alt="" class="w-100">
+                </div>
+            </div>
+            <div class="row mt-5 teams-row gap-5 gap-md-0">
+                <div class="col-md-4">
+                    <img src="media/teams/photography.jpg" alt="" class="w-100">
+                </div>
+                <div class="col-md-4">
+                    <img src="media/teams/WEB MANANGING Team.jpg" alt="" class="w-100">
+                </div>
+                <div class="col-md-4">
+                    <img src="media/teams/VIDEOGRAPHY.png" alt="" class="w-100">
+                </div>
+            </div>
+            <div class="row mt-5 teams-row gap-5 gap-md-0">
+                <div class="col-md-4">
+                    <img src="media/teams/department coordinator.jpg" alt="" class="w-100">
+                </div>
+                <div class="col-md-4">
+                    <img src="media/teams/registration.jpeg" alt="" class="w-100">
+                </div>
+                <div class="col-md-4">
+                    <img src="media/teams/DEPARTMENT COORDINATOR SZAB.png" alt="" class="w-100">
+                </div>
+            </div>
+            <div class="row mt-5 teams-row gap-5 gap-md-0">
+                <div class="col-md-4">
+                    <img src="media/teams/CONTENT WRIZTER  FINAL.jpg" alt="" class="w-100">
+                </div>
+                <div class="col-md-4">
+                    <img src="media/teams/MARKETING MANAGERS.jpg" alt="" class="w-100">
+                </div>
+                <div class="col-md-4 mb-5">
+                    <img src="media/teams/HULT DESIGNERS.jpg" alt="" class="w-100">
+                </div>
+            </div>
     </section>
 
     <!-- Footer Section -->
@@ -167,15 +213,18 @@
                         Khairpur Mir's, Sindh, Pakistan<br>
                         Phone: +923051028803<br>
                         Email: <a href="mailto: hultprizemuetkhp@gmail.com">hultprizemuetkhp@gmail.com</a>
-                      </p>
+                    </p>
                 </div>
                 <div class="col-lg-3 mb-4">
                     <h5>Follow Us</h5>
                     <div class="social-icons">
-                        <a href="https://www.facebook.com/share/19p9QJzvCU/?mibextid=wwXIfr" class="me-2"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.facebook.com/share/19p9QJzvCU/?mibextid=wwXIfr" class="me-2"><i
+                                class="fab fa-facebook-f"></i></a>
                         <a href="#" class="me-2"><i class="fab fa-twitter"></i></a>
-                        <a href="https://www.linkedin.com/company/hult-prize-muet-szab/" class="me-2"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="https://www.instagram.com/hpmuetkhp?igsh=MXhoN292aXB3NWsxaQ==" class="me-2"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/company/hult-prize-muet-szab/" class="me-2"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/hpmuetkhp?igsh=MXhoN292aXB3NWsxaQ==" class="me-2"><i
+                                class="fab fa-instagram"></i></a>
                         <a href="#"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
@@ -186,10 +235,24 @@
         </div>
     </footer>
 
-    <!-- Bootstrap JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
+    <script>
+        let toRemove = document.querySelectorAll('.remove')
+        Array.from(toRemove).map((element) => {
+            if (window.innerWidth <= 992)
+                element.remove();
+        })
+        if (window.innerWidth > 992) {
+            document.querySelector('.sm-screen').style.display='none'
+
+        }
+
+    </script>
 
 </body>
 </body>
