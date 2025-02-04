@@ -106,40 +106,39 @@
     </nav>
 
     <section id="teams">
-        <div class="container bg-succes" style=" width: 100%;">
+        <div class="container bg-succes">
             <div class="row sm-screen mt-5">
                 <div
-                    class="col d-flex flex-column align-items-center">
+                    class="col d-flex flex-column align-items-center mt-4">
                     <h1 class="heading text-center">Meet Our Team</h1>
                     <p class="text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam exercitationem et qui, distinctio iste facere cumque. In sed maxime aperiam vitae fuga totam saepe quam! Voluptate harum sapiente doloribus fuga!</p>
                 </div>
             </div>
             <div class="row lead pt-5 gap-0">
-                <div class="col-lg-3 col-sm-6 pb-5 pb-lg-4 ">
-                    <img src="media/teams/REHAN MEHDI.png" alt="" style="width: 100%;">
+                <div class="col-lg-3 col-sm-6 pb- pb-lg-4 ">
+                    <img src="media/teams/REHAN MEHDI.png" alt="" class="w-100 mb-4">
                 </div>
                 <div
-                    class="col-lg-6 col-sm-6 pb-5 pb-lg-4 d-flex flex-column  align-items-center justify-content-center  remove">
+                    class="col-lg-6 col-sm-6 pb-5 pb-lg-4   d-flex flex-column  align-items-center justify-content-center  remove">
                     <h1 class="heading">Meet Our Team</h1>
                     <p class="text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam exercitationem et qui, distinctio iste facere cumque. In sed maxime aperiam vitae fuga totam saepe quam! Voluptate harum sapiente doloribus fuga!</p>
                 </div>
-                <div class="col-lg-3 col-sm-6 pb-5 pb-lg-4">
-                    <img src="media/teams/ZAIN kKHAN.png" alt="" style="width: 100%;">
+                <div class="col-lg-3 col-sm-6 pb- pb-lg-4 ">
+                    <img src="media/teams/ZAIN kKHAN.png" alt="" class="w-100 mb-4">
                 </div>
 
-                <div class="col-lg-3 col-sm-6 pb-5 pb-lg-0 ">
-                    <img src="media/teams/ALI NAWAZ.jpg.png" alt="" style="width: 100%;">
+                <div class="col-lg-3 col-sm-6 pb- pb-lg-0">
+                    <img src="media/teams/ALI NAWAZ.jpg.png" alt="" class="w-100 mb-4">
+                    <img src="media/teams/MUSKAN ALI RIZVI.png" alt="" class="w-100 mb-4">
                 </div>
-                <div class="col-lg-3 col-sm-6 pb-5 pb-lg-0">
-                    <img src="media/teams/MUSKAN ALI RIZVI.png" alt="" style="width: 100%;">
+                <div class="col-lg-6 col-sm-6 pb- pb-lg-0">
+                    <img src="media/teams/EXECUTIVE BODY-2.png" alt="" class="w-100 mb-4">
 
                 </div>
-                <div class="col-lg-3 col-sm-6 pb-5 pb-lg-0">
-                    <img src="media/teams/FARAZ SIDIQUI.png" alt="" style="width: 100%;">
 
-                </div>
-                <div class="col-lg-3 col-sm-6 pb-5 pb-lg-0">
-                    <img src="media/teams/LEAD FINANCE SZAB.png" alt="" style="width: 100%;">
+                <div class="col-lg-3 col-sm-6 pb- pb-lg-0">
+                    <img src="media/teams/FARAZ SIDIQUI.png" alt="" class="w-100 mb-4">
+                    <img src="media/teams/LEAD FINANCE SZAB.png" alt="" class="w-100">
                 </div>
 
             </div>
@@ -148,7 +147,7 @@
                     <img src="media/teams/event management.jpg" alt="" class="w-100">
                 </div>
                 <div class="col-md-4">
-                    <img src="media/teams/EXECUTIVE BODY-2.png" alt="" class="w-100">
+                    <img src="media/teams/WEB MANANGING Team.jpg" alt="" class="w-100">
                 </div>
                 <div class="col-md-4">
                     <img src="media/teams/organizer.jpg" alt="" class="w-100">
@@ -156,10 +155,10 @@
             </div>
             <div class="row mt-5 teams-row gap-5 gap-md-0">
                 <div class="col-md-4">
-                    <img src="media/teams/photography.jpg" alt="" class="w-100">
+                    <img src="media/teams/MARKETING MANAGERS.jpg" alt="" class="w-100">
                 </div>
                 <div class="col-md-4">
-                    <img src="media/teams/WEB MANANGING Team.jpg" alt="" class="w-100">
+                    <img src="media/teams/photography.jpg" alt="" class="w-100">
                 </div>
                 <div class="col-md-4">
                     <img src="media/teams/VIDEOGRAPHY.png" alt="" class="w-100">
@@ -181,7 +180,6 @@
                     <img src="media/teams/CONTENT WRIZTER  FINAL.jpg" alt="" class="w-100">
                 </div>
                 <div class="col-md-4">
-                    <img src="media/teams/MARKETING MANAGERS.jpg" alt="" class="w-100">
                 </div>
                 <div class="col-md-4 mb-5">
                     <img src="media/teams/HULT DESIGNERS.jpg" alt="" class="w-100">
@@ -251,6 +249,26 @@
             document.querySelector('.sm-screen').style.display='none'
 
         }
+        let replaceContainerA=document.querySelector('.lead >div:nth-child(3)')
+        let replaceContainerB=document.querySelector('.lead >div:nth-child(4)')
+        let replaceContainerC=document.querySelector('.lead >div:nth-child(5)')
+        console.log(replaceContainerA);
+        console.log(replaceContainerB);
+        
+        
+        let imgA=replaceContainerA.children[0]
+        let imgB=replaceContainerB.children[0]
+        let imgC=replaceContainerC.children[0]
+
+        if(window.innerWidth<=992){
+            replaceContainerB.appendChild(imgA)
+            replaceContainerB.appendChild(imgC)
+            replaceContainerA.prepend(imgB)
+
+        }
+        
+
+        
 
     </script>
 
